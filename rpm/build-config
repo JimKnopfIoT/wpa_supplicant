@@ -541,8 +541,9 @@ CONFIG_AP=y
 # P2P (Wi-Fi Direct)
 # This can be used to enable P2P support in wpa_supplicant. See README-P2P for
 # more information on P2P operations.
-# Keep this disabled on SailfishOS. Will break AP mode on C2 (and XperiaX)
-# CONFIG_P2P=y
+# Enabled on SailfishOS: needed by Wi-Fi Display (CONFIG_WIFI_DISPLAY below)
+# and by Miracast sources. Tested with AP mode (tethering) on Jolla J2.
+CONFIG_P2P=y
 
 # Enable TDLS support
 CONFIG_TDLS=y
